@@ -1,4 +1,4 @@
-FILE=resume
+FILE=Jordan_McConnell_Resume
 
 resume: ${FILE}.tex
 	pdflatex ${FILE}.tex
