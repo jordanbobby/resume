@@ -6,40 +6,55 @@
 \usepackage{newcent}   % uses new century schoolbook postscript font
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 \usepackage{fancyhdr}  % use this package to get a 2 line header
+\usepackage[margin=0.5in]{geometry}
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
 \setlength{\headheight}{24pt} % allow room for 2-line header
 \setlength{\headsep}{24pt}  % space between header and text
 \setlength{\headheight}{24pt} % allow room for 2-line header
 \pagestyle{fancy}     % set pagestyle for document
-\rhead{ {\it Z. Zinger}\\{\it p. \thepage} } % put text in header (right side)
 \cfoot{}                                     % the foot is empty
 \topmargin=-0.5in % start text higher on the page
 
 \begin{document}
-\thispagestyle{empty} % this page has no header
-\name{Jordan McConnell\\}% the \\[12pt] adds a blank line after name
-
-\address{1360 NW Van Buren Ave \\ Corvallis, OR 97330\\
-  (503) 347-9899\\ jordanmcconnell@comcast.net }
-
-
 
 \begin{resume}
+{\centering
+{\Large \bf Jordan McConnell} \\
+1360 NW Van Buren Ave \\
+Corvallis, OR 97330 \\
+(503) 347-9899 \\
+jordanmcconnell@comcast.net
+\par
+}
+\begin{center}
+\line(1,0){450}
+\end{center}
 
 \section{OBJECTIVE}
 \vspace{8pt} % provide vertical space between section title and contents
 To obtain a position that is actively involved in new and emerging technologies.
 \vspace{0.2in}
+\section{SKILLS}
+\vspace{8pt}
+Proficiency: C\#, HTML/CSS, Javascript/JSON, JQuery, SQL, ASP.NET
+\\
+\\
+Familiarity: Java, C/C++, PHP, Python
+\\
+\\
+Software: Visual Studio 2010/2012, TFS, GIT, SVN, Vim, IIS
+
+\vspace{0.2in}
 \section{EDUCATION}
 \vspace{8pt}
-{\sl BS}, Computer Science, Computer Systems option \\
-Oregon State University, Corvallis, OR \hspace{0.2in}  GPA 3.16 \hfill July 2013 \\
+{\sl BS}, Computer Science, Computer Systems option \hfill Exp. Graduation July 2013\\
+Oregon State University, Corvallis, OR \hfill GPA 3.16 \\
 
 {\sl Senior Project}\\
 Creating a web application for Solar World to improve the efficiency of their manufacturing process through data analysis of system alarms.
-    \begin{itemize} \itemsep -2pt
+    \begin{itemize} \itemsep -1pt
     \item Gathered requirements from client by meeting with them to understanding their software needs.
-    \item Queried alarm data from clients database using T-SQL with user-selected parameters.
+    \item Queried alarm data from client's database using T-SQL with user-selected parameters.
     \item Organized data from database into a formatted table for graphing using C\#.
     \item Developed web graphing application using ASP.NET to display the data.
     \item Integrated new web application into existing website while maintaining company style.
@@ -51,21 +66,11 @@ Creating a web application for Solar World to improve the efficiency of their ma
 {\sl Business Solutions Group} \hfill        February 2012 - present \\
 Student Developer, Corvallis, OR
 
-   \begin{itemize} \itemsep -2pt % reduce space between items
-   \item Produced proof of concept for a mobile application for Oregon Department of Transportation using Sencha Touch that would provide hands free text-to-speech updates of traffic.
-   \item Implemented a statewide notification system for Oregon Department of Transportation using C\# and T-SQL that allows a user to notify others using a variety of media methods.
-   \item Updated existing website for Oregon State University by adding in more functionality and fixing existing bugs.
-   \item Created new reports for website using SSRS to allow users to see data from database in an organized and clean fashion.
+   \begin{itemize} \itemsep -1pt % reduce space between items
+   \item Produced proof of concept for a mobile application for Oregon Department of Transportation using Sencha Touch and JSON that would provide hands-free text-to-speech updates of traffic.
+   \item Implemented a statewide notification system for Oregon Department of Transportation using C\# and T-SQL that allows a user to notify others using a variety of communication methods
+   \item Updated existing web application for Oregon State University by adding in more functionality and fixing existing bugs using C\#, ASP.NET, and JQuery.
+   \item Created new reports for Oregon State University web application using SSRS and T-SQL stored procedures to allow users to see data from database in an organized and clean fashion.
  \end{itemize}
-\vspace{0.2in}
-\section{SKILLS}
-\vspace{8pt}
-Proficiency: C\#, HTML5/CSS, Javascript/JSON, JQuery, SQL
-\\
-\\
-Familiarity: Java,C/C++, PHP, Python
-
-Software: Visual Studio 2010/2012, TFS, GIT, SVN, Vim
-
 \end{resume}
 \end{document}
